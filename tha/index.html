@@ -26,11 +26,14 @@ h2.t{font-size:clamp(26px,4vw,38px);margin:0 0 8px}.sub{color:#475569;margin:0 0
 .ref{background:var(--p);color:#fff;border-radius:20px;padding:40px;text-align:center}
 details{border-bottom:1px solid #e5e7eb;padding:16px 0}summary{font-weight:700;cursor:pointer}
 footer{background:var(--d);color:#cbd5e1;padding:40px 0 90px;font-size:15px}footer .w{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+.hcall{white-space:nowrap;flex-shrink:0;padding:10px 16px}.hcall .full{display:none}.logo{line-height:1.2;margin-right:10px}
 .mcall{position:fixed;bottom:12px;left:12px;right:12px;text-align:center;z-index:10;box-shadow:0 8px 24px #0005}
-@media(min-width:900px){.hero .w{grid-template-columns:1.2fr 1fr;align-items:center}.hero{padding:90px 0}.mcall{display:none}footer{padding-bottom:40px}}
+@media(min-width:600px){.hcall .full{display:inline}}
+@media(min-width:900px){.hero .w{grid-template-columns:1.2fr 1fr;align-items:center}.hero{padding:90px 0}.hcall{white-space:nowrap;flex-shrink:0;padding:10px 16px}.hcall .full{display:none}.logo{line-height:1.2;margin-right:10px}
+.mcall{display:none}footer{padding-bottom:40px}}
 </style></head><body>
 <div class="demo">Demo preview by Blades of Grass Marketing</div>
-<header><div class="w"><span class="logo">THA House Cleaning</span><a class="btn" href="tel:+14252899310">Call 425-289-9310</a></div></header>
+<header><div class="w"><span class="logo">THA House Cleaning</span><a class="btn hcall" href="tel:+14252899310" aria-label="Call 425-289-9310">&#128222; Call<span class="full"> 425-289-9310</span></a></div></header>
 <div class="hero"><div class="w"><div><span class="promo">$25 off your first cleaning with code CLEAN25</span><h1>We clean homes that make you feel good.</h1><p style="font-size:19px;opacity:.95">Professional Seattle home cleaning with safe products, proven methods and spotless results.</p>
 <div class="cta"><a class="btn" href="#quote">Book my cleaning</a><a class="btn o" href="tel:+14252899310">Call 425-289-9310</a></div><p style="opacity:.9;font-size:14px">Google 4.9 ★ (120+) · Yelp 5.0 ★ (176+) · 2026 Nextdoor Neighborhood Fave</p></div>
 <form id="quote" onsubmit="event.preventDefault();this.innerHTML='<h2>Thanks!</h2><p>This is a demo form — on the live site your request would go straight to the team.</p>'">
