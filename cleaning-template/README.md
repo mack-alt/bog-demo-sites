@@ -1,3 +1,5 @@
+> **Template: Owner Pitch Page** · B-O-G Template Library (see /templates/). Folder name kept so live URLs keep working.
+
 # Residential-cleaning pitch-page template (Blades of Grass Marketing)
 
 This is the THA page turned into a template you can reuse for every prospect. It builds one page per prospect at `https://mack-alt.github.io/bog-demo-sites/<slug>/`.

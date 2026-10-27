@@ -1,3 +1,5 @@
+> **Template: Owner Pitch Page** · B-O-G Template Library (see /templates/). Folder name kept so live URLs keep working.
+
 # Home-services pitch-page template (electric / HVAC / plumbing) · Blades of Grass Marketing
 
 Adapted from `../cleaning-template/`. Same rules, same C.L.O.S.E.R. order, same light scheme. Differences:
