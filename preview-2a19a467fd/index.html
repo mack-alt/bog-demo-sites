@@ -74,6 +74,20 @@ ul.ticks li:before{content:"";position:absolute;left:3px;top:.45em;width:14px;he
 .bar-bottom a{flex:1;display:flex;align-items:center;justify-content:center;min-height:48px;border-radius:12px;text-decoration:none;font-weight:600}
 .bar-bottom .c{background:var(--forest);color:#fff}.bar-bottom .t{background:var(--sage);color:var(--forest)}
 footer{padding:30px 0 20px;text-align:center;color:var(--mute);font-size:.85rem}
+
+.pair{display:flex;align-items:center;justify-content:center;gap:14px;margin:18px 0 6px;flex-wrap:wrap}
+.person{display:flex;align-items:center;gap:12px;background:var(--paper);border:1px solid var(--line);border-radius:999px;padding:6px 18px 6px 6px;box-shadow:0 10px 26px -22px rgba(27,67,50,.7)}
+.person img,.avatar{width:64px;height:64px;border-radius:50%;object-fit:cover;border:3px solid var(--goldl);flex:none;background:var(--sage)}
+.person b{display:block;font-family:Georgia,serif;color:var(--forest);line-height:1.15}
+.person span{display:block;font-size:.8rem;color:var(--mute);line-height:1.3}
+.pair .amp{font-family:Georgia,serif;font-size:1.4rem;color:var(--gold)}
+.meet{display:grid;grid-template-columns:112px 1fr;gap:16px;align-items:center}
+.meet img{width:112px;height:112px;border-radius:22px;object-fit:cover;border:3px solid var(--goldl)}
+.meet h3{margin-bottom:.2em}.meet p{margin:0}
+.video .hostpic{width:84px;height:84px;border-radius:50%;object-fit:cover;border:3px solid var(--goldl);margin-bottom:8px}
+.vslot .hostpic{width:44px;height:44px;border-radius:50%;object-fit:cover;border:2px solid var(--goldl);margin-bottom:6px}
+.brand img{width:38px;height:38px;border-radius:50%;object-fit:cover;flex:none;border:2px solid var(--goldl)}
+@media(max-width:420px){.meet{grid-template-columns:84px 1fr}.meet img{width:84px;height:84px;border-radius:18px}}
 @media(min-width:760px){
  body{font-size:18px;padding-bottom:0}
  h1{font-size:2.9rem}h2{font-size:2.1rem}
@@ -89,7 +103,7 @@ footer{padding:30px 0 20px;text-align:center;color:var(--mute);font-size:.85rem}
 <body>
 <header><div class="wrap">
  <div class="brand">
-  <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M24 42c0-9-1.2-16-6.5-24" fill="none" stroke="#1b4332" stroke-width="2" stroke-linecap="round"/><path d="M24 42c0-11 .2-18 .6-26" fill="none" stroke="#1b4332" stroke-width="2.2" stroke-linecap="round"/><path d="M24 42c0-9 3.2-16 8.4-22" fill="none" stroke="#c4a36a" stroke-width="2" stroke-linecap="round"/></svg>
+  <img src="img/kenny.jpg" width="38" height="38" alt="Kenny Mack">
   <div><b>Kenny Mack</b><span>Blades of Grass</span></div>
  </div>
  <a class="callpill" href="tel:+12067436296">Call 206-743-6296</a>
@@ -99,11 +113,17 @@ footer{padding:30px 0 20px;text-align:center;color:var(--mute);font-size:.85rem}
 <div class="hero"><div class="wrap">
  <div class="eyebrow">A business offer for Miss Mack's Cleaning</div>
  <h1>Maile, here's a plan to go from about $10K a month toward $20K.</h1>
+ <div class="pair">
+  <div class="person"><img src="img/kenny.jpg" width="64" height="64" alt="Kenny Mack" loading="eager"><div><b>Kenny</b><span>Blades of Grass</span></div></div>
+  <span class="amp" aria-hidden="true">&amp;</span>
+  <div class="person"><img src="img/maile.jpg" width="64" height="64" alt="Maile, owner of Miss Mack's Cleaning, with her dog" loading="eager"><div><b>Maile</b><span>Miss Mack's Cleaning, Boise</span></div></div>
+ </div>
  <p class="lead">This is a paid, written offer. It is a business relationship between two businesses, not a favor between siblings. That is on purpose, and it is the best way for both of us to do this well.</p>
 
  <!-- VIDEO SLOT: Kenny's video goes here. To add it, replace this whole div's contents with:
       <video controls playsinline preload="metadata" poster="video-poster.jpg"><source src="kenny-video.mp4" type="video/mp4"></video> -->
  <div class="video" id="kenny-video" role="img" aria-label="Video slot for Kenny's video">
+  <img class="hostpic" src="img/kenny.jpg" width="84" height="84" alt="" loading="lazy">
   <div class="play"></div>
   <strong>Kenny's video goes here</strong>
   <small>About 90 seconds. A quick walk-through of this page.</small>
@@ -128,6 +148,7 @@ footer{padding:30px 0 20px;text-align:center;color:var(--mute);font-size:.85rem}
 <section><div class="wrap">
  <div class="eyebrow">Where you're at, and the target</div>
  <h2>I know where you're at now.</h2>
+<div class="card meet"><img src="img/maile.jpg" width="112" height="112" alt="Maile, owner of Miss Mack's Cleaning, with her dog" loading="lazy"><div><h3>Meet Maile</h3><p>Owner of Miss Mack's Cleaning in Boise. Woman-owned, locally owned, and the reason this plan exists.</p></div></div>
  <p>You've built a real residential cleaning business in Boise, Meridian, and the Treasure Valley. You're woman-owned and locally owned, with recurring clients who keep you busy. Round one of your rate raises is done.</p>
  <div class="steps">
   <div class="step"><small>Now</small><b>about $10K / mo</b></div>
@@ -164,51 +185,51 @@ footer{padding:30px 0 20px;text-align:center;color:var(--mute);font-size:.85rem}
   <h3>Rate raise, round 2</h3>
   <p>Round one is done. Round two goes to the clients who are still underpriced for the work. Everyone who isn't profitable either gets up to a fair price, or we help them find somewhere else. They get 30 days' notice, and the script already exists.</p>
   <!-- VIDEO SLOT: Rate Raise video. Replace this div with <video controls playsinline preload="metadata"><source src="video-rate-raise.mp4" type="video/mp4"></video> -->
-  <div class="vslot" role="img" aria-label="Video slot: Rate Raise video"><div class="pl"></div><b>Rate Raise video</b><small>Kenny's video goes here &middot; about 45-60 seconds</small></div>
+  <div class="vslot" role="img" aria-label="Video slot: Rate Raise video"><img class="hostpic" src="img/kenny.jpg" width="44" height="44" alt="" loading="lazy"><div class="pl"></div><b>Rate Raise video</b><small>Kenny's video goes here &middot; about 45-60 seconds</small></div>
   </div></div>
  <div class="card play"><div class="num">2</div><div>
   <h3>Referral rewards</h3>
   <p>$25 off for the client who refers, and $25 off for the new client. Your happy clients are already talking. This gives them a reason to say your name.</p>
   <!-- VIDEO SLOT: Referral Rewards video. Replace this div with <video controls playsinline preload="metadata"><source src="video-referral-rewards.mp4" type="video/mp4"></video> -->
-  <div class="vslot" role="img" aria-label="Video slot: Referral Rewards video"><div class="pl"></div><b>Referral Rewards video</b><small>Kenny's video goes here &middot; about 45-60 seconds</small></div>
+  <div class="vslot" role="img" aria-label="Video slot: Referral Rewards video"><img class="hostpic" src="img/kenny.jpg" width="44" height="44" alt="" loading="lazy"><div class="pl"></div><b>Referral Rewards video</b><small>Kenny's video goes here &middot; about 45-60 seconds</small></div>
   </div></div>
  <div class="card play"><div class="num">3</div><div>
   <h3>Google profile &amp; reviews</h3>
   <p>Your Google profile is your front door, and reviews are what people read before they call. Four short pieces, each with its own video.</p>
   <div class="sub"><h4><span>3a</span>Google profile makeover</h4><p>Claim your profile if it isn't claimed yet, then tune it up: business name, service area, hours, photos, services, a clear description, and weekly updates.</p>
   <!-- VIDEO SLOT: Google Profile Makeover video. Replace this div with <video controls playsinline preload="metadata"><source src="video-google-profile.mp4" type="video/mp4"></video> -->
-  <div class="vslot" role="img" aria-label="Video slot: Google Profile Makeover video"><div class="pl"></div><b>Google Profile Makeover video</b><small>Kenny's video goes here &middot; about 45-60 seconds</small></div>
+  <div class="vslot" role="img" aria-label="Video slot: Google Profile Makeover video"><img class="hostpic" src="img/kenny.jpg" width="44" height="44" alt="" loading="lazy"><div class="pl"></div><b>Google Profile Makeover video</b><small>Kenny's video goes here &middot; about 45-60 seconds</small></div>
   </div>
   <div class="sub"><h4><span>3b</span>New reviews from current clients</h4><p>A polite ask at the right moment, to clients who are already happy. Real reviews only, never fake, and never paid for or traded for a discount.</p>
   <!-- VIDEO SLOT: New Reviews video. Replace this div with <video controls playsinline preload="metadata"><source src="video-new-reviews.mp4" type="video/mp4"></video> -->
-  <div class="vslot" role="img" aria-label="Video slot: New Reviews video"><div class="pl"></div><b>New Reviews video</b><small>Kenny's video goes here &middot; about 45-60 seconds</small></div>
+  <div class="vslot" role="img" aria-label="Video slot: New Reviews video"><img class="hostpic" src="img/kenny.jpg" width="44" height="44" alt="" loading="lazy"><div class="pl"></div><b>New Reviews video</b><small>Kenny's video goes here &middot; about 45-60 seconds</small></div>
   </div>
   <div class="sub"><h4><span>3c</span>Review replies &amp; reputation</h4><p>Reply to the reviews you already have, kindly and in your own voice, and keep your profile looking fresh and active.</p>
   <!-- VIDEO SLOT: Review Replies video. Replace this div with <video controls playsinline preload="metadata"><source src="video-review-replies.mp4" type="video/mp4"></video> -->
-  <div class="vslot" role="img" aria-label="Video slot: Review Replies video"><div class="pl"></div><b>Review Replies video</b><small>Kenny's video goes here &middot; about 45-60 seconds</small></div>
+  <div class="vslot" role="img" aria-label="Video slot: Review Replies video"><img class="hostpic" src="img/kenny.jpg" width="44" height="44" alt="" loading="lazy"><div class="pl"></div><b>Review Replies video</b><small>Kenny's video goes here &middot; about 45-60 seconds</small></div>
   </div>
   <div class="sub"><h4><span>3d</span>Online presence overhaul + daily posting</h4><p>Instead of trading with someone for an occasional post, you could be posting every day across Google, Facebook, and Instagram. Consistent, local, before-and-after style. You approve it, and you own every account.</p>
   <!-- VIDEO SLOT: Online Presence &amp; Daily Posting video. Replace this div with <video controls playsinline preload="metadata"><source src="video-daily-posting.mp4" type="video/mp4"></video> -->
-  <div class="vslot" role="img" aria-label="Video slot: Online Presence &amp; Daily Posting video"><div class="pl"></div><b>Online Presence &amp; Daily Posting video</b><small>Kenny's video goes here &middot; about 45-60 seconds</small></div>
+  <div class="vslot" role="img" aria-label="Video slot: Online Presence &amp; Daily Posting video"><img class="hostpic" src="img/kenny.jpg" width="44" height="44" alt="" loading="lazy"><div class="pl"></div><b>Online Presence &amp; Daily Posting video</b><small>Kenny's video goes here &middot; about 45-60 seconds</small></div>
   </div>
   </div></div>
  <div class="card play"><div class="num">4</div><div>
   <h3>Move-out partnerships: realtors, property managers &amp; Airbnb hosts</h3>
   <p>You already clean Airbnbs, so we build on what's working. Hosts, property managers, and realtors often need a turnover or move-out clean, and want one dependable person to call. A simple partner offer helps you reach more of them.</p>
   <!-- VIDEO SLOT: Move-Out Partnerships video. Replace this div with <video controls playsinline preload="metadata"><source src="video-moveout-partnerships.mp4" type="video/mp4"></video> -->
-  <div class="vslot" role="img" aria-label="Video slot: Move-Out Partnerships video"><div class="pl"></div><b>Move-Out Partnerships video</b><small>Kenny's video goes here &middot; about 45-60 seconds</small></div>
+  <div class="vslot" role="img" aria-label="Video slot: Move-Out Partnerships video"><img class="hostpic" src="img/kenny.jpg" width="44" height="44" alt="" loading="lazy"><div class="pl"></div><b>Move-Out Partnerships video</b><small>Kenny's video goes here &middot; about 45-60 seconds</small></div>
   </div></div>
  <div class="card play"><div class="num">5</div><div>
   <h3>New clients at new prices</h3>
   <p>Every new recurring client starts at your new rate. They never see the old ones. That stops new underpriced clients from joining the list and makes the math in the table above work.</p>
   <!-- VIDEO SLOT: New Clients at New Prices video. Replace this div with <video controls playsinline preload="metadata"><source src="video-new-prices.mp4" type="video/mp4"></video> -->
-  <div class="vslot" role="img" aria-label="Video slot: New Clients at New Prices video"><div class="pl"></div><b>New Clients at New Prices video</b><small>Kenny's video goes here &middot; about 45-60 seconds</small></div>
+  <div class="vslot" role="img" aria-label="Video slot: New Clients at New Prices video"><img class="hostpic" src="img/kenny.jpg" width="44" height="44" alt="" loading="lazy"><div class="pl"></div><b>New Clients at New Prices video</b><small>Kenny's video goes here &middot; about 45-60 seconds</small></div>
   </div></div>
  <div class="card play"><div class="num">6</div><div>
   <h3>Paid ads, later, on purpose</h3>
   <p>Ads can work well once the earlier plays are in place, because you'd be sending paid clicks to a strong profile and a fair price. Until then, ads would cost money without a good place to send people.</p>
   <!-- VIDEO SLOT: Paid Ads video. Replace this div with <video controls playsinline preload="metadata"><source src="video-paid-ads.mp4" type="video/mp4"></video> -->
-  <div class="vslot" role="img" aria-label="Video slot: Paid Ads video"><div class="pl"></div><b>Paid Ads video</b><small>Kenny's video goes here &middot; about 45-60 seconds</small></div>
+  <div class="vslot" role="img" aria-label="Video slot: Paid Ads video"><img class="hostpic" src="img/kenny.jpg" width="44" height="44" alt="" loading="lazy"><div class="pl"></div><b>Paid Ads video</b><small>Kenny's video goes here &middot; about 45-60 seconds</small></div>
   </div></div>
 </div></section>
 
@@ -218,8 +239,8 @@ footer{padding:30px 0 20px;text-align:center;color:var(--mute);font-size:.85rem}
  <div class="card play opt"><div class="num">+</div><div>
   <h3>Front Desk call answering &amp; booking</h3>
   <p><span class="tag">OPTIONAL</span> Not one of the six plays, and no pressure. This short video simply shows you what it is. It answers your business phone in your company's name when you can't pick up, and helps set up the next step with the caller.</p>
-  <!-- VIDEO SLOT: Front Desk video. Replace this div with <video controls playsinline preload="metadata"><source src="video-front-desk.mp4" type="video/mp4"></video> -->
-  <div class="vslot" role="img" aria-label="Video slot: Front Desk video"><div class="pl"></div><b>Front Desk video</b><small>Kenny's video goes here &middot; about 45-60 seconds</small></div>
+  <video controls playsinline preload="metadata" poster="front-desk-maile-poster.jpg" aria-label="Front Desk video for Miss Mack's Cleaning" style="width:100%;aspect-ratio:16/9;border-radius:12px;background:#1b4332;margin:12px 0 4px;display:block"><source src="front-desk-maile.mp4" type="video/mp4"></video>
+  <p class="fine" style="margin:0">About 45 seconds. Made for Miss Mack's Cleaning.</p>
   </div></div>
 </div></section>
 
@@ -283,7 +304,7 @@ footer{padding:30px 0 20px;text-align:center;color:var(--mute);font-size:.85rem}
  <p>That's all I need. If it's yes, I'll send the short written agreement for the website, and we start there.</p>
  <a class="btn" href="sms:+12067436296?&body=Hi%20Kenny%2C%20my%20answer%20is%3A%20">Text Kenny: yes or no</a>
  <a class="btn alt" href="tel:+12067436296">Call 206-743-6296</a>
- <p class="fine" style="margin-top:14px">Kenny Mack, Blades of Grass</p>
+ <div class="person" style="margin-top:16px"><img src="img/kenny.jpg" width="64" height="64" alt="Kenny Mack" loading="lazy"><div><b>Kenny Mack</b><span>Your brother. Blades of Grass.</span></div></div>
 </div></section>
 </main>
 <footer><div class="wrap">Blades of Grass &middot; Prepared for Miss Mack's Cleaning &middot; November 2026</div></footer>
