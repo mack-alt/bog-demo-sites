@@ -1,0 +1,800 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Miss Mack's Cleaning | Home cleaning in Boise, Meridian, and the Treasure Valley</title>
+<meta name="description" content="Miss Mack's Cleaning is Maile's residential cleaning business in Boise, Meridian, and the Treasure Valley. Call or email to request an estimate.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#8C3418">
+<meta property="og:title" content="Miss Mack's Cleaning">
+<meta property="og:description" content="Residential cleaning in Boise, Meridian, and the Treasure Valley. Call or email Maile to request an estimate.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%238C3418'/%3E%3Ctext x='16' y='22' text-anchor='middle' font-family='Georgia' font-size='16' fill='%23FFF8F2'%3EM%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Fraunces:ital,opsz,wght@0,9..144,560;0,9..144,680;1,9..144,560&display=swap" rel="stylesheet">
+<style>
+:root {
+  --cream: #fbf6f0;
+  --paper: #fffdfb;
+  --ink: #2c241c;
+  --muted: #5c5148;
+  --rust: #8c3418;
+  --rust-dark: #6e2712;
+  --shirt: #e25b2a;
+  --clay: #f6e6d8;
+  --line: #eadfd3;
+  --deep: #2a211c;
+  --sample-bg: #fff6dc;
+  --sample-ink: #5c4308;
+  --sample-line: #8a5a10;
+  --focus: #8c3418;
+  --header: 72px;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  font-family: "Atkinson Hyperlegible", "Segoe UI", system-ui, sans-serif;
+  color: var(--ink);
+  background: var(--cream);
+  font-size: 1.125rem;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+img { max-width: 100%; height: auto; }
+a { color: var(--rust-dark); }
+a:hover { color: var(--rust); }
+:focus-visible {
+  outline: 3px solid var(--focus);
+  outline-offset: 3px;
+}
+.skip {
+  position: absolute;
+  left: 12px;
+  top: -48px;
+  background: var(--paper);
+  color: var(--ink);
+  padding: 10px 14px;
+  border-radius: 10px;
+  z-index: 30;
+  font-weight: 700;
+}
+.skip:focus { top: 12px; }
+.wrap { width: min(1120px, calc(100% - 32px)); margin-inline: auto; }
+.draft {
+  background: #5c4308;
+  color: #fff8e8;
+  font-size: 0.95rem;
+  line-height: 1.45;
+  padding: 10px 16px;
+  text-align: center;
+}
+.draft strong { color: #fff; }
+header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  background: rgba(255, 253, 251, 0.94);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--line);
+}
+.bar {
+  min-height: var(--header);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px 0;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: var(--ink);
+  min-width: 0;
+}
+.mark {
+  width: 42px;
+  height: 42px;
+  border-radius: 13px;
+  background: var(--rust);
+  color: #fff8f2;
+  display: grid;
+  place-items: center;
+  font-family: Fraunces, Georgia, serif;
+  font-weight: 680;
+  font-size: 1.25rem;
+  flex: none;
+}
+.brand-text { display: flex; flex-direction: column; min-width: 0; }
+.brand-text b {
+  font-family: Fraunces, Georgia, serif;
+  font-size: 1.15rem;
+  font-weight: 680;
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+}
+.brand-text small {
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+  font-weight: 700;
+}
+.brand-text b { white-space: nowrap; }
+.menu { position: relative; display: flex; align-items: center; }
+.menu-btn {
+  cursor: pointer;
+  font: inherit;
+  font-weight: 700;
+  background: var(--paper);
+  color: var(--ink);
+  border: 2px solid var(--line);
+  border-radius: 999px;
+  min-height: 44px;
+  padding: 8px 16px;
+}
+.menu-btn:focus-visible { outline-offset: 4px; }
+#site-links { display: none; }
+#site-links a {
+  text-decoration: none;
+  color: var(--ink);
+  font-weight: 700;
+  padding: 12px 14px;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+}
+.call {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 10px 16px;
+  border-radius: 999px;
+  background: var(--rust);
+  color: #fff !important;
+  text-decoration: none;
+  font-weight: 700;
+  white-space: nowrap;
+  gap: 0.35rem;
+}
+.call:hover { background: var(--rust-dark); color: #fff !important; }
+.call.ghost {
+  background: transparent;
+  color: var(--rust-dark) !important;
+  border: 2px solid var(--rust);
+}
+.call.ghost:hover { background: var(--clay); }
+.hero { padding: 28px 0 12px; }
+.hero-grid { display: grid; gap: 22px; align-items: center; }
+.kicker {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--rust);
+  margin-bottom: 8px;
+}
+h1, h2, h3 { font-family: Fraunces, Georgia, "Iowan Old Style", serif; line-height: 1.15; letter-spacing: -0.02em; font-weight: 680; }
+h1 { font-size: clamp(2.15rem, 8vw, 4.4rem); margin: 0 0 14px; }
+h2 { font-size: clamp(1.8rem, 4vw, 2.7rem); margin: 0 0 12px; }
+h3 { font-size: 1.45rem; margin: 0 0 8px; }
+.lead { font-size: 1.2rem; color: var(--muted); margin: 0 0 18px; max-width: 40rem; }
+.ctas { display: flex; flex-wrap: wrap; gap: 10px; margin: 0 0 12px; }
+.fine { color: var(--muted); font-size: 1rem; margin: 0; max-width: 40rem; }
+.photo-frame {
+  background: linear-gradient(160deg, #f3d2bf, #f8ebe1 55%, #f7d7c4);
+  border-radius: 28px 28px 72px 28px;
+  padding: 10px;
+  box-shadow: 0 18px 40px rgba(90, 42, 20, 0.12);
+}
+.photo-frame img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  object-position: center 18%;
+  border-radius: 22px 22px 64px 22px;
+}
+.photo-frame figcaption {
+  padding: 10px 12px 6px;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+.facts {
+  display: grid;
+  gap: 10px;
+  padding: 8px 0 28px;
+}
+.facts div {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 14px 16px;
+}
+.facts b { display: block; font-size: 1.05rem; }
+.facts span { color: var(--muted); font-size: 0.98rem; }
+section { padding: 36px 0; scroll-margin-top: 88px; }
+.section-intro { max-width: 42rem; color: var(--muted); margin-top: 0; }
+.services { display: grid; gap: 14px; }
+.service {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  padding: 18px 18px 16px;
+  box-shadow: 0 8px 24px rgba(70, 36, 18, 0.04);
+}
+.service { display: flow-root; }
+.service-head { display: block; }
+.icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 16px;
+  background: var(--clay);
+  color: var(--rust-dark);
+  display: grid;
+  place-items: center;
+  float: left;
+  margin: 0 12px 8px 0;
+}
+.icon svg { width: 26px; height: 26px; }
+.service p { margin: 0; color: var(--ink); }
+.sample {
+  margin-top: 14px;
+  background: var(--sample-bg);
+  border: 2px dashed var(--sample-line);
+  border-radius: 16px;
+  padding: 12px 14px 8px;
+  color: var(--sample-ink);
+}
+.badge {
+  display: inline-block;
+  background: var(--sample-line);
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  border-radius: 999px;
+  padding: 4px 8px;
+  margin-bottom: 8px;
+}
+.sample p, .sample li { color: var(--sample-ink); }
+.sample ul { margin: 8px 0 10px; padding-left: 1.2rem; }
+.sample p { margin: 0 0 8px; }
+.sample summary {
+  cursor: pointer;
+  font-weight: 700;
+  list-style: none;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.sample summary::-webkit-details-marker { display: none; }
+.sample summary .badge { margin: 0; flex: none; }
+.sample summary:focus-visible { outline-offset: 4px; }
+.areas { display: grid; gap: 12px; }
+.area {
+  background: var(--deep);
+  color: #fbf6f0;
+  border-radius: 22px;
+  padding: 20px 18px;
+  min-height: 150px;
+}
+.area h3 { color: #fff; margin-bottom: 6px; }
+.area p { margin: 0; color: #f3e6da; }
+.about-grid { display: grid; gap: 18px; }
+.about-copy p { margin-top: 0; }
+.pair { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.pair figure { margin: 0; }
+.pair img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  object-position: center 20%;
+  border-radius: 22px;
+  display: block;
+}
+.pair figcaption { color: var(--muted); font-size: 0.95rem; padding-top: 6px; }
+.estimate {
+  background: var(--deep);
+  color: #fbf6f0;
+  border-radius: 28px;
+  padding: 22px 18px;
+}
+.estimate h2, .estimate h3 { color: #fff; }
+.estimate .section-intro, .estimate .fine { color: #f0e4d8; }
+.estimate a { color: #ffd7bf; }
+.steps { margin: 0 0 16px; padding-left: 1.2rem; }
+.steps li { margin: 8px 0; }
+.contact-links { display: grid; gap: 10px; margin: 14px 0 18px; }
+.contact-links a {
+  display: flex;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 16px;
+  padding: 12px 14px;
+  text-decoration: none;
+  min-height: 44px;
+  color: #fff !important;
+}
+.contact-links small { color: #f0e4d8; font-size: 0.85rem; letter-spacing: 0.06em; text-transform: uppercase; font-weight: 700; }
+.contact-links b { font-size: 1.15rem; overflow-wrap: anywhere; }
+form {
+  background: var(--paper);
+  color: var(--ink);
+  border-radius: 20px;
+  padding: 16px;
+}
+form h3 { margin-top: 0; }
+label { display: block; font-weight: 700; font-size: 1rem; margin: 12px 0 6px; }
+input, select, textarea {
+  width: 100%;
+  font: inherit;
+  font-size: 1.05rem;
+  color: var(--ink);
+  background: #fff;
+  border: 2px solid #ddcfc2;
+  border-radius: 12px;
+  padding: 12px 12px;
+  min-height: 48px;
+}
+textarea { min-height: 120px; resize: vertical; }
+input:focus-visible, select:focus-visible, textarea:focus-visible { outline-offset: 2px; border-color: var(--rust); }
+.form-note { color: var(--muted); font-size: 0.98rem; margin: 10px 0; }
+button.call, .call.button {
+  border: 0;
+  width: 100%;
+  cursor: pointer;
+  font: inherit;
+  font-weight: 700;
+  font-size: 1.05rem;
+}
+.err {
+  background: #fde8e4;
+  color: #6e2712;
+  border-radius: 12px;
+  padding: 10px 12px;
+  margin: 0 0 8px;
+}
+.ok {
+  background: #e8f6ec;
+  color: #14532d;
+  border-radius: 12px;
+  padding: 10px 12px;
+  margin: 0 0 8px;
+}
+[hidden] { display: none !important; }
+footer {
+  padding: 28px 0 110px;
+  color: var(--muted);
+  font-size: 1rem;
+}
+footer .wrap { display: grid; gap: 8px; }
+footer a { overflow-wrap: anywhere; }
+.actionbar {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 25;
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 8px;
+  padding: 10px 12px calc(10px + env(safe-area-inset-bottom));
+  background: rgba(255, 253, 251, 0.96);
+  border-top: 1px solid var(--line);
+}
+@media (max-width: 879px) {
+  #site-links.is-open {
+    display: grid;
+    position: absolute;
+    top: calc(100% + 8px);
+    right: 0;
+    z-index: 30;
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    padding: 8px;
+    min-width: 200px;
+    box-shadow: 0 16px 40px rgba(44, 36, 28, 0.12);
+  }
+  .header-call .num { display: none; }
+}
+@media (max-width: 420px) {
+  .header-call { display: none; }
+  .draft { font-size: 0.9rem; padding: 8px 12px; }
+  .hero { padding-top: 16px; }
+  h1 { font-size: 2rem; }
+  .lead { font-size: 1.05rem; margin-bottom: 12px; }
+}
+@media (max-width: 360px) {
+  .hero { padding-top: 8px; }
+  h1 { font-size: 1.85rem; line-height: 1.08; margin-bottom: 8px; }
+  .lead { line-height: 1.45; margin-bottom: 10px; }
+  .kicker { margin-bottom: 4px; letter-spacing: 0.04em; }
+  .hero .fine { display: none; }
+}
+@media (min-width: 720px) {
+  .facts, .areas { grid-template-columns: repeat(3, 1fr); }
+  .services { grid-template-columns: 1fr 1fr; }
+  .estimate { padding: 32px; }
+}
+@media (min-width: 880px) {
+  .hero { padding: 48px 0 10px; }
+  .hero-grid { grid-template-columns: 1.15fr 0.85fr; gap: 40px; }
+  .menu-btn { display: none; }
+  #site-links { display: flex; gap: 4px; }
+  #site-links a { padding: 10px 8px; }
+  .about-grid { grid-template-columns: 0.9fr 1.1fr; gap: 36px; align-items: start; }
+  .estimate-grid { display: grid; grid-template-columns: 0.9fr 1.1fr; gap: 28px; align-items: start; }
+  .actionbar { display: none; }
+  footer { padding-bottom: 40px; }
+  button.call { width: auto; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  * { transition: none !important; }
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#content">Skip to content</a>
+<div class="draft"><strong>Review draft.</strong> Gold boxes marked Sample are placeholders, not confirmed facts. The phone number and email are real.</div>
+<header>
+  <div class="wrap bar">
+    <a class="brand" href="#top">
+      <span class="mark" aria-hidden="true">M</span>
+      <span class="brand-text"><b>Miss Mack's</b><small>Cleaning</small></span>
+    </a>
+    <nav class="menu" aria-label="On this page">
+      <button type="button" class="menu-btn" aria-expanded="false" aria-controls="site-links">Menu</button>
+      <div id="site-links">
+        <a href="#services">Services</a>
+        <a href="#areas">Areas</a>
+        <a href="#about">About</a>
+        <a href="#estimate">Estimate</a>
+      </div>
+    </nav>
+    <a class="call header-call" href="tel:+12086084683"><span>Call</span><span class="num">208-608-4683</span></a>
+  </div>
+</header>
+
+<main id="content">
+  <div class="hero" id="top">
+    <div class="wrap hero-grid">
+      <div>
+        <p class="kicker">Boise · Meridian · Treasure Valley</p>
+        <h1>Home cleaning you can call and talk through.</h1>
+        <p class="lead">Miss Mack's Cleaning is Maile's residential cleaning business. It is woman-owned and locally owned. She offers recurring cleaning, deep cleans, move-in and move-out, organizing, laundry and folding, and Airbnb turnovers.</p>
+        <div class="ctas">
+          <a class="call" href="tel:+12086084683">Call 208-608-4683</a>
+          <a class="call ghost" href="#estimate">Request an estimate</a>
+        </div>
+        <p class="fine">An estimate is a conversation about your home. This page does not pick a time or confirm a visit.</p>
+      </div>
+      <figure class="photo-frame">
+        <img src="img/maile.jpg" width="640" height="640" alt="Maile, owner of Miss Mack's Cleaning, smiling in an orange Miss Mack's shirt beside her dog" fetchpriority="high">
+        <figcaption>Maile, owner of Miss Mack's Cleaning, with her dog.</figcaption>
+      </figure>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <div class="facts" aria-label="About the business">
+      <div><b>Woman-owned</b><span>Maile owns the business.</span></div>
+      <div><b>Locally owned</b><span>Based around Boise.</span></div>
+      <div><b>Residential cleaning</b><span>Homes, move-ins and move-outs, and short-term rental turnovers.</span></div>
+    </div>
+  </div>
+
+  <section id="services" aria-labelledby="services-title">
+    <div class="wrap">
+      <p class="kicker">Services</p>
+      <h2 id="services-title">What you can ask for</h2>
+      <p class="section-intro">These are the kinds of help Miss Mack's Cleaning offers. Every home is different, so what a visit covers is confirmed when you request an estimate. Gold boxes are sample outlines for this draft. They are not Miss Mack's checklist.</p>
+      <div class="services">
+        <article class="service" id="recurring">
+          <div class="service-head">
+            <div class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 0 1-15.5 6.2L3 16"/><path d="M3 12a9 9 0 0 1 15.5-6.2L21 8"/><path d="M21 3v5h-5"/><path d="M3 21v-5h5"/></svg></div>
+            <div>
+              <h3>Recurring cleaning</h3>
+              <p>A regular clean on a rhythm you and Maile agree on, such as weekly, every other week, or another pace that fits the home. People use this when they want the ordinary reset handled on a steady schedule. How often, and what each visit includes, is part of the estimate.</p>
+            </div>
+          </div>
+          <details class="sample">
+            <summary><span class="badge">Sample</span> Sample outline, not a confirmed checklist</summary>
+            <p>Sample outline, not a confirmed checklist. A finished page might name rooms like this:</p>
+            <ul>
+              <li>Kitchen surfaces, the outside of the stove, and the sink</li>
+              <li>Bathrooms, mirrors, and floors</li>
+              <li>Dusting of reachable surfaces</li>
+              <li>A schedule such as weekly or every other week, chosen with you</li>
+            </ul>
+          </details>
+        </article>
+
+        <article class="service" id="deep-clean">
+          <div class="service-head">
+            <div class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.6 4.4L18 9l-4.4 1.6L12 15l-1.6-4.4L6 9l4.4-1.6L12 3z"/><path d="M18 14l.8 2.2L21 17l-2.2.8L18 20l-.8-2.2L15 17l2.2-.8L18 14z"/></svg></div>
+            <div>
+              <h3>Deep clean</h3>
+              <p>A more thorough clean than a regular visit, for a home that needs extra attention. People often ask for this before they start a recurring schedule, after a busy stretch, or when a space has been waiting. The scope is agreed before the visit.</p>
+            </div>
+          </div>
+          <details class="sample">
+            <summary><span class="badge">Sample</span> Sample outline, not a confirmed checklist</summary>
+            <p>Sample outline, not a confirmed checklist. Extra attention might be described like this, and only if Maile agrees it belongs:</p>
+            <ul>
+              <li>Buildup in kitchens and baths beyond a regular visit</li>
+              <li>Baseboards, doors, and inside empty cabinets if that is requested</li>
+              <li>Inside the oven or fridge only when both of you add it on purpose</li>
+            </ul>
+          </details>
+        </article>
+
+        <article class="service" id="move">
+          <div class="service-head">
+            <div class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11.5 12 4l9 7.5"/><path d="M5 10.5V20h14v-9.5"/><path d="M10 20v-6h4v6"/></svg></div>
+            <div>
+              <h3>Move-in and move-out</h3>
+              <p>Cleaning when someone is moving into a home or leaving one. Useful for homeowners, renters, and people handing over keys. Timing and what the visit covers are set when you request the estimate, not assumed from this page.</p>
+            </div>
+          </div>
+          <details class="sample">
+            <summary><span class="badge">Sample</span> Sample outline, not a confirmed checklist</summary>
+            <p>Sample outline, not a confirmed checklist. A move clean is often talked about like this:</p>
+            <ul>
+              <li>Empty rooms, kitchens, and bathrooms</li>
+              <li>Inside cabinets and the fridge when they are empty and you ask for that</li>
+              <li>Not a hauling or junk-removal service, unless Maile says otherwise later</li>
+            </ul>
+          </details>
+        </article>
+
+        <article class="service" id="organizing">
+          <div class="service-head">
+            <div class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h7v7H4zM13 4h7v4h-7zM13 10h7v10h-7zM4 13h7v7H4z"/></svg></div>
+            <div>
+              <h3>Organizing</h3>
+              <p>Help putting a space back in order, on its own or along with a clean. You name the area. How much sorting is included is worked out in the estimate, so the size of the job is clear before anyone starts.</p>
+            </div>
+          </div>
+          <details class="sample">
+            <summary><span class="badge">Sample</span> Sample outline, not a confirmed menu</summary>
+            <p>Sample outline, not a confirmed menu. Organizing might later be described by area:</p>
+            <ul>
+              <li>A closet, a pantry, a room, or another space you name</li>
+              <li>Sorting with you, rather than discarding things without you</li>
+              <li>One area at a time, so the job has a clear end</li>
+            </ul>
+          </details>
+        </article>
+
+        <article class="service" id="laundry">
+          <div class="service-head">
+            <div class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16v12H4z"/><path d="M8 7V5h8v2"/><path d="M8 12h8M8 15h5"/></svg></div>
+            <div>
+              <h3>Laundry and folding</h3>
+              <p>Laundry help and folding for a household that wants that part handled too. Whether it happens during a cleaning visit or on its own, and how it is done in your home, is confirmed with you.</p>
+            </div>
+          </div>
+          <details class="sample">
+            <summary><span class="badge">Sample</span> Sample outline, not a confirmed process</summary>
+            <p>Sample outline, not a confirmed process. A later version might say:</p>
+            <ul>
+              <li>Wash, dry, and fold using the machines in the home</li>
+              <li>Folded laundry left where you ask</li>
+              <li>Pickup and drop-off only if Maile offers it. That is not confirmed.</li>
+            </ul>
+          </details>
+        </article>
+
+        <article class="service" id="airbnb">
+          <div class="service-head">
+            <div class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="15" r="3"/><path d="M10.5 12.5 19 4l1 1-8.5 8.5"/><path d="M16 5l3 3"/></svg></div>
+            <div>
+              <h3>Airbnb turnover</h3>
+              <p>Cleaning between guest stays for a short-term rental. Maile already does this kind of work. Hosts can call or email to talk through timing and what the turnover should include. This page does not hold a checkout window.</p>
+            </div>
+          </div>
+          <details class="sample">
+            <summary><span class="badge">Sample</span> Sample outline, not a confirmed turnover list</summary>
+            <p>Sample outline, not a confirmed turnover list. Hosts often ask about items like these:</p>
+            <ul>
+              <li>Kitchen, baths, and floors reset between guests</li>
+              <li>Linens and restocking only if you and Maile agree they are included</li>
+              <li>A checkout time talked through per stay, not booked on this page</li>
+            </ul>
+          </details>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="areas" aria-labelledby="areas-title">
+    <div class="wrap">
+      <p class="kicker">Service area</p>
+      <h2 id="areas-title">Boise, Meridian, and the Treasure Valley</h2>
+      <p class="section-intro">If you are nearby and not sure your address is in range, call or email and ask. Maile can tell you.</p>
+      <div class="areas">
+        <article class="area"><h3>Boise</h3><p>Homes in Boise.</p></article>
+        <article class="area"><h3>Meridian</h3><p>Homes in Meridian.</p></article>
+        <article class="area"><h3>Treasure Valley</h3><p>The wider valley around those cities. Ask if you are near the edge.</p></article>
+      </div>
+      <div class="sample">
+        <span class="badge">Sample</span>
+        <p>Sample city list for a later draft. These places are not confirmed as served, and they should come off the page unless Maile says they belong: Eagle, Nampa, Star, Kuna, Caldwell, Garden City.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" aria-labelledby="about-title">
+    <div class="wrap about-grid">
+      <div class="pair">
+        <figure>
+          <img src="img/maile-alt.jpg" width="640" height="640" alt="Maile outdoors in sunglasses, holding her dog" loading="lazy">
+          <figcaption>Maile with her dog.</figcaption>
+        </figure>
+        <figure>
+          <img src="img/maile.jpg" width="640" height="640" alt="Maile in an orange Miss Mack's Cleaning shirt, close beside her dog" loading="lazy">
+          <figcaption>Orange Miss Mack's shirt.</figcaption>
+        </figure>
+      </div>
+      <div class="about-copy">
+        <p class="kicker">About</p>
+        <h2 id="about-title">Maile, owner</h2>
+        <p>Maile owns Miss Mack's Cleaning. The business is woman-owned and locally owned, and it serves homes in Boise, Meridian, and the Treasure Valley.</p>
+        <p>The photos on this page are Maile, with her dog.</p>
+        <div class="sample">
+          <span class="badge">Sample</span>
+          <p>Sample story. This is not Maile's biography. A finished version would use her own words: why she started, what she pays attention to in a home, and what she wants a new client to know.</p>
+        </div>
+        <div class="sample">
+          <span class="badge">Sample</span>
+          <p>Sample hours, not a confirmed schedule: Monday–Thursday 9:00–5:00, Friday 9:00–3:00.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="estimate" aria-labelledby="estimate-title">
+    <div class="wrap">
+      <div class="estimate">
+        <div class="estimate-grid">
+          <div>
+            <p class="kicker" style="color:#ffd0b8">Estimate</p>
+            <h2 id="estimate-title">Call or email to request an estimate</h2>
+            <p class="section-intro">Tell Maile about the home and the kind of help you want. She follows up with you directly. This website does not store the form, and it does not book a visit.</p>
+            <ol class="steps">
+              <li>Call or email, or use the form to open an email on your device.</li>
+              <li>Share your city, the service, and a few notes about the home.</li>
+              <li>Wait to hear back from Maile. A time is set with her, not by this page.</li>
+            </ol>
+            <div class="contact-links">
+              <a href="tel:+12086084683"><small>Phone</small><b>208-608-4683</b></a>
+              <a href="mailto:missmackscleaning@gmail.com?subject=Estimate%20request%20for%20Miss%20Mack%27s%20Cleaning"><small>Email</small><b>missmackscleaning@gmail.com</b></a>
+            </div>
+            <p class="fine">No prices are listed here. The estimate is for your home.</p>
+          </div>
+          <form id="estimate-form" action="mailto:missmackscleaning@gmail.com" method="post" enctype="text/plain">
+            <h3>Start an email</h3>
+            <p id="form-status" role="status" hidden></p>
+            <label for="name">Your name</label>
+            <input id="name" name="Name" autocomplete="name" required>
+            <label for="phone">Phone</label>
+            <input id="phone" name="Phone" type="tel" autocomplete="tel" inputmode="tel" required>
+            <label for="email">Email</label>
+            <input id="email" name="Email" type="email" autocomplete="email" required>
+            <label for="city">City or area</label>
+            <input id="city" name="City" autocomplete="address-level2">
+            <label for="service">What do you need?</label>
+            <select id="service" name="Service">
+              <option selected>Not sure yet</option>
+              <option>Recurring cleaning</option>
+              <option>Deep clean</option>
+              <option>Move-in / move-out</option>
+              <option>Organizing</option>
+              <option>Laundry and folding</option>
+              <option>Airbnb turnover</option>
+            </select>
+            <label for="notes">Notes about the home</label>
+            <textarea id="notes" name="Notes" placeholder="Beds and baths, pets, stairs, or timing that would help. Optional."></textarea>
+            <p class="form-note">Sending this opens your email app with a message ready for missmackscleaning@gmail.com. It does not submit to a website server, and it does not reserve a time.</p>
+            <button class="call" type="submit">Open email to request an estimate</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <strong>Miss Mack's Cleaning</strong>
+    <div>Residential cleaning in Boise, Meridian, and the Treasure Valley.</div>
+    <div><a href="tel:+12086084683">208-608-4683</a> · <a href="mailto:missmackscleaning@gmail.com">missmackscleaning@gmail.com</a></div>
+    <div>Review draft. Not the live site. Woman-owned and locally owned.</div>
+  </div>
+</footer>
+
+<nav class="actionbar" aria-label="Quick contact">
+  <a class="call ghost" href="tel:+12086084683">Call</a>
+  <a class="call" href="#estimate">Request an estimate</a>
+</nav>
+
+<script>
+(function () {
+  var menuBtn = document.querySelector(".menu-btn");
+  var siteLinks = document.getElementById("site-links");
+  if (menuBtn && siteLinks) {
+    menuBtn.addEventListener("click", function () {
+      var open = siteLinks.classList.toggle("is-open");
+      menuBtn.setAttribute("aria-expanded", open ? "true" : "false");
+    });
+    siteLinks.querySelectorAll("a").forEach(function (link) {
+      link.addEventListener("click", function () {
+        siteLinks.classList.remove("is-open");
+        menuBtn.setAttribute("aria-expanded", "false");
+      });
+    });
+  }
+
+  var form = document.getElementById("estimate-form");
+  var status = document.getElementById("form-status");
+  if (!form) return;
+
+  function show(kind, text) {
+    status.hidden = false;
+    status.className = kind;
+    status.textContent = text;
+  }
+
+  form.addEventListener("submit", function (event) {
+    event.preventDefault();
+    var name = form.Name.value.trim();
+    var phone = form.Phone.value.trim();
+    var email = form.Email.value.trim();
+    var city = form.City.value.trim();
+    var service = form.Service.value.trim();
+    var notes = form.Notes.value.trim();
+    var digits = phone.replace(/\D/g, "");
+
+    if (!name || !email || digits.length < 7 || !email.includes("@")) {
+      show("err", "Add your name, a phone number, and an email so Maile can reply. Or call 208-608-4683.");
+      if (!name) form.Name.focus();
+      else if (digits.length < 7) form.Phone.focus();
+      else form.Email.focus();
+      return;
+    }
+
+    var body = [
+      "Name: " + name,
+      "Phone: " + phone,
+      "Email: " + email,
+      "City: " + (city || "(not given)"),
+      "Service: " + service,
+      "Notes: " + (notes || "(none)"),
+      "",
+      "Sent from the Miss Mack's Cleaning website.",
+      "This message requests an estimate. It does not book a time."
+    ].join("\n");
+
+    var href = "mailto:missmackscleaning@gmail.com?subject=" +
+      encodeURIComponent("Estimate request for Miss Mack's Cleaning") +
+      "&body=" + encodeURIComponent(body);
+
+    show("ok", "Opening your email app with this request. If nothing opens, email missmackscleaning@gmail.com or call 208-608-4683. Nothing was saved on this website.");
+    window.location.href = href;
+  });
+})();
+</script>
+</body>
+</html>
