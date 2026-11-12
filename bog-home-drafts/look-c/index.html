@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="googlebot" content="noindex, nofollow">
+  <meta name="theme-color" content="#f6f0e6">
+  <title>Look C · Blades of Grass Marketing and Solutions</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,560;9..144,640&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M16 28c0-8-4-13-8-20 3 6 6 10 8 16 2-6 5-10 8-16-4 7-8 12-8 20z' fill='%231e5a38'/%3E%3C/svg%3E">
+  <style>
+    :root {
+      --paper: #f6f0e6;
+      --ink: #2a2118;
+      --text: #3f342b;
+      --label: #6a5c50;
+      --green: #1e5a38;
+      --clay: #7c3822;
+      --line: #e0d3c3;
+      --card: #fffaf4;
+      --band: #efe4d4;
+      color-scheme: light;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      margin: 0;
+      background:
+        radial-gradient(880px 380px at 100% -8%, #f8e6d2 0%, transparent 58%),
+        var(--paper);
+      color: var(--ink);
+      font-family: "Source Sans 3", Inter, "Noto Sans", sans-serif;
+      font-size: 1.075rem;
+      line-height: 1.5;
+      text-rendering: optimizeLegibility;
+    }
+    img, svg { display: block; max-width: 100%; height: auto; }
+    h1, h2, h3, p { overflow-wrap: break-word; }
+    ::selection { background: #ead8c4; color: var(--ink); }
+    .wrap { width: min(1040px, calc(100% - 40px)); margin-inline: auto; }
+    .bar {
+      display: flex;
+      align-items: center;
+      min-height: 68px;
+      padding: 16px 0 12px;
+    }
+    .brand { display: flex; align-items: center; gap: 10px; min-width: 0; }
+    .brand svg { width: 30px; height: 30px; flex: none; }
+    .brand span {
+      font-family: Fraunces, "Noto Serif", Georgia, serif;
+      font-weight: 560;
+      font-size: 1.02rem;
+      line-height: 1.2;
+      letter-spacing: -0.015em;
+      text-wrap: balance;
+    }
+    .hero {
+      display: grid;
+      gap: 26px;
+      padding: 6px 0 8px;
+    }
+    .kicker {
+      margin: 0;
+      color: var(--clay);
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.13em;
+      text-transform: uppercase;
+    }
+    h1 {
+      margin: 8px 0 0;
+      font-family: Fraunces, Georgia, serif;
+      font-weight: 560;
+      font-size: clamp(2.05rem, 4vw, 3.35rem);
+      line-height: 1.12;
+      letter-spacing: -0.02em;
+      text-wrap: balance;
+    }
+    h1 span {
+      display: block;
+      text-decoration: underline;
+      text-decoration-color: var(--clay);
+      text-decoration-thickness: 3px;
+      text-underline-offset: 0.12em;
+    }
+    .sub {
+      margin: 14px 0 0;
+      max-width: 34em;
+      color: var(--text);
+      font-size: 1.15rem;
+      line-height: 1.4;
+    }
+    .cta-row {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 12px 16px;
+      margin-top: 20px;
+    }
+    .cta {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 48px;
+      padding: 0 20px;
+      border-radius: 8px;
+      background: var(--green);
+      color: #fffaf4;
+      font-weight: 600;
+      font-size: 1.02rem;
+      text-decoration: none;
+    }
+    .cta:hover { background: #17462c; }
+    .cta:focus-visible { outline: 2px solid var(--clay); outline-offset: 3px; }
+    .or { margin: 0; color: var(--text); }
+    .scenes {
+      display: grid;
+      gap: 10px;
+      margin: 0;
+      padding: 0;
+      min-width: 0;
+    }
+    .scenes figure {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin: 0;
+      padding: 10px 12px;
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      min-width: 0;
+    }
+    .scenes svg { width: 72px; height: 56px; flex: none; }
+    .scenes figcaption { min-width: 0; }
+    .scenes strong {
+      display: block;
+      font-weight: 600;
+      font-size: 1rem;
+      letter-spacing: -0.01em;
+    }
+    .scenes span { display: block; color: var(--label); font-size: 0.92rem; }
+    .process { padding: 26px 0 8px; }
+    .process h2, .fit h2 {
+      margin: 0 0 14px;
+      font-family: Fraunces, Georgia, serif;
+      font-weight: 560;
+      font-size: 1.45rem;
+      letter-spacing: -0.02em;
+      line-height: 1.2;
+    }
+    .steps {
+      list-style: none;
+      position: relative;
+      display: grid;
+      gap: 18px;
+      margin: 0;
+      padding: 0;
+    }
+    .steps::before {
+      content: "";
+      position: absolute;
+      left: 15px;
+      top: 16px;
+      bottom: 16px;
+      width: 1px;
+      background: #ddcfc0;
+    }
+    .steps li {
+      display: grid;
+      grid-template-columns: 32px minmax(0, 1fr);
+      gap: 4px 12px;
+      align-items: start;
+    }
+    .n {
+      position: relative;
+      z-index: 1;
+      width: 32px;
+      height: 32px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      background: var(--green);
+      color: #fffaf4;
+      font-weight: 600;
+      font-size: 0.92rem;
+      grid-row: span 2;
+    }
+    .steps h3 {
+      margin: 2px 0 0;
+      font-size: 1.08rem;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+      line-height: 1.3;
+      text-wrap: balance;
+    }
+    .steps p, .fit p { margin: 0; color: var(--text); font-size: 1.02rem; line-height: 1.45; }
+    .band { background: var(--band); margin-top: 26px; }
+    .fit { display: grid; gap: 20px; padding: 22px 0; }
+    .foot {
+      display: grid;
+      gap: 4px;
+      padding: 18px 0 28px;
+    }
+    .fb {
+      margin: 0;
+      font-family: Fraunces, Georgia, serif;
+      font-weight: 560;
+      font-size: 1.05rem;
+    }
+    .fs, .fp, .fd { margin: 0; color: var(--label); font-size: 0.95rem; }
+    .fd { margin-top: 8px; font-size: 0.8rem; letter-spacing: 0.04em; }
+    @media (min-width: 860px) {
+      .hero {
+        grid-template-columns: minmax(0, 1.12fr) minmax(0, 0.88fr);
+        align-items: center;
+        gap: 40px;
+        padding-top: 10px;
+      }
+      .steps {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 28px;
+      }
+      .steps::before {
+        left: 16px;
+        right: 16px;
+        top: 15px;
+        bottom: auto;
+        width: auto;
+        height: 1px;
+      }
+      .steps li { display: block; }
+      .n { margin-bottom: 12px; }
+      .fit { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 48px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap bar">
+      <div class="brand">
+        <svg viewBox="0 0 32 32" aria-hidden="true">
+          <path d="M16 28c0-7-3.2-12-7.2-19 2.6 6 5.2 10 7.2 15.2C18.2 19 20.8 15 23.2 9 19.2 16 16 21 16 28z" fill="#1e5a38"/>
+          <path d="M16 28c0-6-1.2-10-1.2-16 1 5 1.2 9 1.2 16z" fill="#7c3822" fill-opacity="0.85"/>
+        </svg>
+        <span>Blades of Grass Marketing and Solutions</span>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="wrap hero">
+      <div>
+        <p class="kicker">Locked In Dispatch</p>
+        <h1>Every call answered. <span>More jobs booked.</span></h1>
+        <p class="sub">A managed front desk for local service businesses.</p>
+        <div class="cta-row">
+          <a class="cta" href="[Book a call link]" rel="nofollow">Book a short call</a>
+          <p class="or">or call [Demo line]</p>
+        </div>
+      </div>
+      <div class="scenes">
+        <figure>
+          <svg viewBox="0 0 88 64" aria-hidden="true">
+            <g transform="translate(16,1) scale(0.46)">
+              <path fill="#fffaf4" stroke="#1e5a38" stroke-width="3.2" stroke-linejoin="round" d="M18 78c-2-22 8-42 28-52l8-4c6-3 12 1 13 7l4 16c1 5-2 9-7 11l-8 3c2 8 8 16 16 20l6-7c3-4 9-5 13-2l14 10c5 4 4 12-2 15l-10 6c-16 8-36 6-52-8-14-12-22-30-23-45z"/>
+            </g>
+            <rect x="20" y="46" width="50" height="12" rx="2" fill="#fffaf4" stroke="#2a2118" stroke-width="1.4"/>
+            <path d="M38 46 v-6 h14 v6" fill="none" stroke="#2a2118" stroke-width="1.3"/>
+          </svg>
+          <figcaption>
+            <strong>The phone, answered</strong>
+            <span>Someone picks up.</span>
+          </figcaption>
+        </figure>
+        <figure>
+          <svg viewBox="0 0 88 64" aria-hidden="true">
+            <line x1="6" y1="56" x2="84" y2="56" stroke="#2a2118" stroke-width="1.4"/>
+            <rect x="46" y="14" width="30" height="42" fill="#fffaf4" stroke="#2a2118" stroke-width="1.5"/>
+            <rect x="52" y="20" width="10" height="8" fill="none" stroke="#2a2118" stroke-width="1.2"/>
+            <rect x="60" y="32" width="12" height="24" fill="none" stroke="#2a2118" stroke-width="1.2"/>
+            <path d="M60 40 h12 M60 48 h12" stroke="#2a2118" stroke-width="1"/>
+            <rect x="8" y="36" width="28" height="14" rx="1.5" fill="#1e5a38"/>
+            <path d="M36 38 h8 l6 12 H36 Z" fill="#1e5a38"/>
+            <circle cx="16" cy="52" r="4" fill="#fffaf4" stroke="#2a2118" stroke-width="1.3"/>
+            <circle cx="36" cy="52" r="4" fill="#fffaf4" stroke="#2a2118" stroke-width="1.3"/>
+            <path d="M68 56 L74 28 M74 56 L80 28" fill="none" stroke="#7c3822" stroke-width="1.4"/>
+            <path d="M70 46 h8 M72 36 h8" stroke="#7c3822" stroke-width="1.3"/>
+          </svg>
+          <figcaption>
+            <strong>The day, on the job</strong>
+            <span>The schedule meets the work.</span>
+          </figcaption>
+        </figure>
+        <figure>
+          <svg viewBox="0 0 72 56" aria-hidden="true">
+            <rect x="8" y="6" width="56" height="44" rx="4" fill="#fffaf4" stroke="#2a2118" stroke-width="1.5"/>
+            <path d="M8 18 h56" stroke="#2a2118" stroke-width="1.3"/>
+            <rect x="16" y="26" width="14" height="8" rx="1" fill="#1e5a38"/>
+            <rect x="34" y="26" width="14" height="8" rx="1" fill="#e7d8c6"/>
+            <rect x="16" y="38" width="14" height="8" rx="1" fill="#1e5a38"/>
+            <rect x="34" y="38" width="14" height="8" rx="1" fill="#1e5a38"/>
+            <rect x="52" y="26" width="6" height="8" rx="1" fill="#e7d8c6"/>
+          </svg>
+          <figcaption>
+            <strong>The week, booked</strong>
+            <span>Jobs land on the calendar.</span>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+    <section class="wrap process">
+      <h2>How it works</h2>
+      <ol class="steps">
+        <li>
+          <div class="n">1</div>
+          <h3>A short review of how calls are handled now</h3>
+          <p>Who picks up today, and where jobs slip off the schedule.</p>
+        </li>
+        <li>
+          <div class="n">2</div>
+          <h3>Done-for-you setup</h3>
+          <p>We answer, qualify, book, follow up, and hand&nbsp;off exceptions to your team.</p>
+        </li>
+        <li>
+          <div class="n">3</div>
+          <h3>Monthly easy-to-read reports</h3>
+          <p>Calls, bookings, and the exceptions we handed back to your team.</p>
+        </li>
+      </ol>
+    </section>
+    <section class="band">
+      <div class="wrap fit">
+        <div>
+          <h2>Who it's for</h2>
+          <p>Locksmiths, home services, trades, clinics, and other local service businesses.</p>
+        </div>
+        <div>
+          <h2>What can come next</h2>
+          <p>Reviews, customer reactivation, local search visibility, and paid campaigns — when the results justify it.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="wrap foot">
+      <p class="fb">Blades of Grass Marketing and Solutions</p>
+      <p class="fs">Locked In Dispatch · a growth partner for local service businesses.</p>
+      <p class="fp">[Book a call link] · [Demo line]</p>
+      <p class="fd">Draft homepage · not published</p>
+    </div>
+  </footer>
+</body>
+</html>
